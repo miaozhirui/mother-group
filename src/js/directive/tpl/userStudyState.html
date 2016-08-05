@@ -1,0 +1,21 @@
+<div class="component-user-study-state">
+    <!-- 顶部logo区域 -->
+    <div class="result-logo">
+        <div class="total-lessons">
+            <p>累计学习</p>
+            <p>{{result.studyDays}}<span> 天</span></p>
+        </div>
+    </div>
+    <!-- rank desc -->
+    <div class="rank-desc display-box">
+        <div class="display-box-1 left">
+            <p>今日排名第 <span>{{result.ranking}}</span> 位</p>
+        </div>
+        <div class="right" ng-if="isShowRank">
+            <p ng-click="handleClickRank()">排行榜</p>
+        </div>
+    </div>
+    <div class="over">
+        <p>超过<span>{{result.exceed}}</span>的嘟嘟妈妈</p>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+#study-type {
+
+	// 文案描述
+    .desc {
+        padding-top: .54rem;
+        margin-bottom: .33rem;
+        h4 {
+            font-family: NotoSansHans-DemiLight;
+            font-size: 17px;
+            color: #4a4a4a;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: .09rem;
+        }
+        p{
+        	padding:0 .24rem;
+        	line-height: .19rem;
+        	font-size: .13rem;
+        	color:#9b9b9b;
+        }
+    }
+
+    //学习列表
+    .study-list{
+    	padding:0 .24rem;
+
+    	li{
+    		border-radius: 40px;
+    		height:.48rem;
+    		border:1px solid #d8d8d8;
+    		margin-bottom: .12rem;
+    		position: relative;
+
+    		p{
+    			padding:.12rem .24rem 0;
+    			font-size: .15rem;
+    			color:#4a4a4a;
+    		}
+
+    		span.icon{
+
+    			width:.35rem;
+    			height:.35rem;
+    			background: red;
+    			position: absolute;
+				right:.07rem;
+				top:.06rem;
+				border-radius: 50%;
+				background: url('../../imgs/ico@unselect2x.png') no-repeat center;
+				background-size: contain;
+    		}
+
+    	}
+
+    	li.selected{
+
+    		span.icon{
+
+				background: url('../../imgs/ico@select2x.png') no-repeat center;
+				background-size: contain;
+    		}
+            p{
+                color: #e75d3c;
+            }
+    	}
+		
+		li:nth-last-child(1){
+			
+			margin-bottom: 0px;
+		}
+
+    } 
+
+    // btn区域
+    .one-btn{
+    	margin-top: .76rem;
+
+        .btn{
+            background: #d8d8d8;
+        }
+        .btn.has-select{
+
+            background: #e75d3c;
+        }
+    }
+}
+
+
+
+
+
+

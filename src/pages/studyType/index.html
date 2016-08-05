@@ -1,0 +1,22 @@
+<div id="study-type">
+	<!-- 文案描述 -->
+	<div class="desc animated bounce">
+		<h4>选择你要学习的内容吧！</h4>
+		<p>选择你最关心的内容，嘟嘟医生将据此每天给你推送一条该内容的健康小贴士，帮你成为更棒的妈妈！</p>
+	</div>
+	
+	<!-- 学习列表 -->
+	<div class="study-list">
+		<ul>
+			<li ng-repeat="item in courseType track by $index" ng-click="selectCourse($event, item)" class="course">
+				<p>{{item.content}}</p>
+				<span class="icon"></span>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- button点击区域 -->
+	<div class="one-btn" ng-click="finishSelect()" >
+		<button class="btn" ng-class="{'has-select':studyId}">完成</button>
+	</div>
+</div>

@@ -1,0 +1,111 @@
+.component-animal-content {
+    padding: 0 .24rem;
+    // 吉祥物
+    .animal {
+        margin-top: .2rem;
+        .icon {
+            display: block;
+            width: .7rem;
+            height: .7rem;
+            margin: 0 auto;
+            background: url('../imgs/ico_animale@2x.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+    // 学习内容
+    .study-content {
+        position: relative;
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+        h3 {
+            text-align: center;
+            font-size: .17rem;
+            height: .48rem;
+            line-height: .48rem;
+            color: #fff;
+            font-weight: 400;
+        }
+        .content {
+            padding: .08rem .24rem .4rem;
+            border: 1px solid #ffb51f;
+            background: #fffcf5;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+            .question {
+                padding-bottom: .3rem;
+                font-size: 15px;
+                line-height: 1.4;
+            }
+            .answer {
+                padding-top: .1rem;
+                border-top: 1px dashed #ffb51f;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.component-user-study-state {
+    padding:0 .24rem;
+    // 顶部logo区域
+    .result-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.33rem;
+        margin-top: .32rem;
+        background: url('../imgs/page-1@2x.png') no-repeat center;
+        background-size: contain;
+        .total-lessons {
+            text-align: center;
+            p:nth-of-type(1) {
+                font-size: .15rem;
+                color: #9b9b9b;
+            }
+            p:nth-of-type(2) {
+                font-size: .44rem;
+                color: #ffb51f;
+                span {
+                    font-size: .15rem;
+                }
+            }
+        }
+    }
+    // rank desc
+    .rank-desc {
+        margin-top: .2rem;
+        .left {
+            font-size: .15rem;
+            color: #4a4a4a;
+            span {
+                font-size: .24rem;
+                color: #ffb51f;
+            }
+        }
+        .right {
+            text-align: right;
+            padding-top: .07rem;
+            p {
+                display: inline-block;
+                font-size: .12rem;
+                color: #4a4a4a;
+                padding: .01rem .19rem 0rem;
+                border: 1px solid #4a4a4a;
+                border-radius: 400px;
+            }
+        }
+    }
+    .over {
+        font-size: .15rem;
+        color: #4a4a4a;
+        p {
+            span {
+                color: #ffb51f;
+            }
+        }
+    }
+}

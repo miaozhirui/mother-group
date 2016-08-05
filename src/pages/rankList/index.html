@@ -1,0 +1,52 @@
+<div id="rank-list">
+	
+	<!-- logo区域 -->
+	<div class="rank-logo">
+		<span class="logo"></span>
+		<h4>嘟嘟勤学榜</h4>
+		<div class='rank-role' ng-click="showRole()">
+			<span>排名规则</span>
+			<div class="role-desc" ng-show="isShowRole">
+				<span class="arrow"></span>
+				<ul>
+					<li>1、勤学榜排名仅显示前30名用户</li>
+					<li>2、排名按照累计学习天数排名。累计天数越多排名越靠前</li>
+					<li>3、当累计天数一样时，学习时间越早排名越靠前</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 排行榜列表 -->
+	<div class="rank-list">
+		<ul>
+			<li class="display-box">
+				<div class="left">名次</div>
+				<div class="center">用户</div>
+				<div class="right display-box-1">累计学习天数</div>
+			</li>
+			
+			<!-- 已经上榜了 -->
+			<li class="display-box" ng-if="data.isGetRank">
+					<div class="left">{{data.currentUser.rank}}</div>
+					<div class="center">{{data.currentUser.name}}</div>
+					<div class="right display-box-1">{{data.currentUser.studyDays}}</div>
+			</li>
+			
+			<!-- 没有上榜 -->
+			<li ng-if="!data.isGetRank">
+				<p>您今天没有上榜哦</p>
+			</li>
+
+			<!-- 所有其他用户的排行 -->
+			<li class="display-box" ng-repeat="item in data.rankList track by $index">
+				<div class="left">
+					<span ng-if="$index > 2">{{item.rank}}</span>
+					<span class="icon"></span>
+				</div>
+				<div class="center">{{item.name}}</div>
+				<div class="right display-box-1">{{item.studyDays}}</div>
+			</li>
+		</ul>
+	</div>
+</div>

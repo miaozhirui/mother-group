@@ -1,0 +1,160 @@
+ps: 该项目是宝妈成长记
+
+1.分类页面
+{
+	code:1,
+	content: {
+		isSetType: Boolean,
+		isStudy: Boolean
+	},
+	message:''
+}
+完成按钮接口
+
+
+
+2.学习内容首页
+{
+	code:1,
+	content: {
+		question: String
+	},
+	message:''
+}
+进入学习按钮接口
+
+
+3.学习内容详情页
+{
+	code:1,
+	content: {
+		question: String,
+		answer: String
+	},
+	message:''
+}
+学习完成按钮接口
+
+
+4.学习结果页面
+{
+	code:1,
+	content: {
+		studyDays: Number,
+		ranking: Number 名次
+		exceed: String 超过
+	},
+	message:''
+}
+
+5.排行榜
+{
+	code:1,
+	content: {
+		isGetRank: Boolean 是否上榜
+		rankList: Array  排行榜列表
+	},
+	message:''
+}
+
+
+6. 宝妈成长记分享落地页面
+
+{
+	code:1,
+	content: {
+		studyDays: Number,
+		ranking: Number 名次
+		exceed: String 超过,
+		question: String,
+		answer: String
+	},
+	message:''
+}
+
+7. 嘟嘟妈妈课堂分享落地页面
+
+{
+	code:1,
+	content: {
+		manScreen: {
+			src: String,
+			answer: String
+		},
+		sameSeries: [
+			{
+				src: String,
+				title: String
+			}
+		],
+		otherHot: [
+			{
+				src: String
+			},
+			{
+				src: String
+			},
+			{
+				src: String
+			}
+		]	
+	},
+	message:''
+}
+
+
+ps: 嘟嘟课堂
+
+1.随堂测试
+{
+	code:1,
+	content: {
+		duWhich: 1,//做第几道题目
+		fistTitle: String,//一级标题
+		secondTitle: String,//二级标题
+		subjects: [//测试问题列表
+			{
+			 question: String,//问题
+			 answers: [ //答案
+			 	{
+			 	 content: String //每条答案的内容
+			 	}
+			 ]
+			}
+		]
+	},
+	message:''
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

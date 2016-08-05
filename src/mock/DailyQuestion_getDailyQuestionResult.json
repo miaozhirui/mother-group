@@ -1,0 +1,10 @@
+{
+	"code": 1,
+	"content":{
+		"studyDays":100,
+		"ranking": 5,
+		"exceed": "90%"
+		
+		},
+	"message":"我们"
+}

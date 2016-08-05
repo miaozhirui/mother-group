@@ -1,0 +1,24 @@
+{
+    "code": 1,
+    "content": {
+        "isGetRank": false,
+        "currentUser": {
+        		"rank": 23,
+        		"name": "131****8274",
+        		"studyDays": 120
+        	},
+        "rankList": [
+        	{"rank": 1, "name": "131****8274", "studyDays": 100},
+        	{"rank": 2, "name": "131****8274", "studyDays": 100},
+        	{"rank": 3, "name": "131****8274", "studyDays": 100},
+        	{"rank": 4, "name": "131****8274", "studyDays": 100},
+        	{"rank": 5, "name": "131****8274", "studyDays": 100},
+        	{"rank": 6, "name": "131****8274", "studyDays": 100},
+        	{"rank": 7, "name": "131****8274", "studyDays": 100},
+        	{"rank": 8, "name": "131****8274", "studyDays": 100},
+        	{"rank": 9, "name": "131****8274", "studyDays": 100}
+        	
+        ]
+    },
+    "message": "我们"
+}

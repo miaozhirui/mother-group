@@ -1,0 +1,18 @@
+{
+	"code": 1,
+	"content":{
+		"studyType": [
+			{
+                    "id": 1,
+                    "content": "备孕须知"
+                }, {
+                    "id": 2,
+                    "content": "怀孕指南"
+                }, {
+                    "id": 3,
+                    "content": "宝妈进阶"
+                }
+		]
+	},
+	"message": ""
+}

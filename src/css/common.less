@@ -1,0 +1,42 @@
+// 当前项目的公共部分依赖基础的css
+@import './base/public.less';
+@import './component.less';
+@import './base/animated.less';
+body {
+	-webkit-user-select: none;
+  	font-size: 0.16rem;
+    font-family: NotoSansHans-DemiLight, "冬青黑体w3", "黑体", "微软雅黑", "Segoe UI", "Hiragino Sans GB", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Segoe UI", "Hiragino Sans GB W3", sans-serif;
+}
+
+// 在浏览器打开的蒙版提示
+.browser-open{
+
+	position: fixed;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,.6);
+
+	.content{
+		position: absolute;
+		top:30%;
+		left:60%;
+		-webkit-transform:translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		p{
+			color: #fff;
+		}
+
+		.icon{
+			position: absolute;
+			width:100px;
+			height:100px;
+			right:-20px;
+			top:-100px;
+			background: url('../imgs/icon-guide@2x.png') no-repeat center;
+			background-size: contain;
+		}
+	}
+}
